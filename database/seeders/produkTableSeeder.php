@@ -2,16 +2,33 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
-class produkTableSeeder extends Seeder
+class ProdukTableSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
-        //
+        DB::table('produks')->insert([
+            [
+                'nama' => 'Pensil',
+                'kategori' => 'Alat Tulis',
+                'qty' => 20,
+                'harga_beli' => 1000,
+                'harga_jual' => 2000,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'nama' => 'Buku',
+                'kategori' => 'Alat Tulis',
+                'qty' => 10,
+                'harga_beli' => 5000,
+                'harga_jual' => 8000,
+                'created_at' => now(),
+                'updated_at' => now()
+            ]
+        ]);
     }
 }
+

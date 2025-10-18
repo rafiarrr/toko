@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class barang extends Model
 {
     //
-    protected $table = "produk"
+    protected $table = "produk";
 
 }
