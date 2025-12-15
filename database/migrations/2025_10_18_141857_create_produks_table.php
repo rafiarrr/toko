@@ -18,7 +18,7 @@ return new class extends Migration
         $table->integer('qty');
         $table->integer('harga_beli');
         $table->integer('harga_jual');
-        $table->timestamps(); // otomatis buat created_at dan updated_at
+        $table->timestamps(); 
     });
 }
 
